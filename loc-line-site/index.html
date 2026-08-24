@@ -951,7 +951,7 @@
           </div>
           <div>
             <label for="empresa">Empresa</label>
-            <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa">
+            <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa" required>
           </div>
         </div>
         <div class="form-row">
@@ -961,12 +961,12 @@
           </div>
           <div>
             <label for="telefone">Telefone</label>
-            <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000">
+            <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
           </div>
         </div>
         <div>
           <label for="interesse">Tipo de solução</label>
-          <select id="interesse" name="interesse">
+          <select id="interesse" name="interesse" required>
             <option>Grupos geradores</option>
             <option>Plataformas elevatórias</option>
             <option>Engenharia de média tensão</option>
@@ -975,7 +975,7 @@
         </div>
         <div>
           <label for="msg">Descrição da operação</label>
-          <textarea id="msg" name="mensagem" rows="4" placeholder="Descreva a sua necessidade de energia"></textarea>
+          <textarea id="msg" name="mensagem" rows="4" placeholder="Descreva a sua necessidade de energia" required></textarea>
         </div>
         <button class="btn btn-primary" type="submit" id="leadSubmit">Enviar solicitação</button>
         <p id="leadStatus" style="font-size:0.85rem; margin:4px 0 0; display:none;"></p>
