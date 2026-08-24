@@ -425,12 +425,14 @@
   .leadership .section-head p.lead-sub {
     margin-top: 14px; color: var(--ink-soft); font-size: 1.02rem; max-width: 60ch;
   }
-  .lead-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 40px; align-items: start; }
+  .lead-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 40px; }
   @media (max-width: 860px) { .lead-grid { grid-template-columns: 1fr; } }
   .lead-card {
     border: 1px solid var(--line); border-radius: 8px; background: var(--card);
     padding: 32px clamp(20px,4vw,40px);
+    display: flex; flex-direction: column; height: 100%;
   }
+  .lead-card p.lead-bio { flex: 1; }
   .lead-head { display: flex; gap: 20px; align-items: center; margin-bottom: 22px; }
   .lead-avatar {
     width: 84px; height: 84px; border-radius: 50%; flex-shrink: 0;
