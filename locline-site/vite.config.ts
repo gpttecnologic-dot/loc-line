@@ -7,6 +7,6 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // output in `dist/` can be hosted anywhere that serves static files,
 // including GitHub Pages.
 export default defineConfig({
-  base: "/",
+  base: "./",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
 });
